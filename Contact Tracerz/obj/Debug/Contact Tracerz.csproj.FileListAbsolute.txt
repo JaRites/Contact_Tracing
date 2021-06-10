@@ -1,0 +1,10 @@
+C:\Users\rites\source\repos\Contact Tracerz\Contact Tracerz\bin\Debug\Contact Tracerz.exe.config
+C:\Users\rites\source\repos\Contact Tracerz\Contact Tracerz\bin\Debug\Contact Tracerz.exe
+C:\Users\rites\source\repos\Contact Tracerz\Contact Tracerz\bin\Debug\Contact Tracerz.pdb
+C:\Users\rites\source\repos\Contact Tracerz\Contact Tracerz\obj\Debug\Contact Tracerz.csproj.AssemblyReference.cache
+C:\Users\rites\source\repos\Contact Tracerz\Contact Tracerz\obj\Debug\Contact_Tracerz.Form1.resources
+C:\Users\rites\source\repos\Contact Tracerz\Contact Tracerz\obj\Debug\Contact_Tracerz.Properties.Resources.resources
+C:\Users\rites\source\repos\Contact Tracerz\Contact Tracerz\obj\Debug\Contact Tracerz.csproj.GenerateResource.cache
+C:\Users\rites\source\repos\Contact Tracerz\Contact Tracerz\obj\Debug\Contact Tracerz.csproj.CoreCompileInputs.cache
+C:\Users\rites\source\repos\Contact Tracerz\Contact Tracerz\obj\Debug\Contact Tracerz.exe
+C:\Users\rites\source\repos\Contact Tracerz\Contact Tracerz\obj\Debug\Contact Tracerz.pdb
