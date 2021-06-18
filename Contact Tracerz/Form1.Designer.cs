@@ -51,6 +51,8 @@ namespace Contact_Tracerz
             this.NoChckBx = new System.Windows.Forms.CheckBox();
             this.OthersTxtBx = new System.Windows.Forms.TextBox();
             this.OthersLbl = new System.Windows.Forms.Label();
+            this.SaveBtn = new System.Windows.Forms.Button();
+            this.CheckBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // NameLbl
@@ -249,11 +251,32 @@ namespace Contact_Tracerz
             this.OthersLbl.TabIndex = 21;
             this.OthersLbl.Text = "Others:";
             // 
+            // SaveBtn
+            // 
+            this.SaveBtn.Location = new System.Drawing.Point(465, 434);
+            this.SaveBtn.Name = "SaveBtn";
+            this.SaveBtn.Size = new System.Drawing.Size(110, 45);
+            this.SaveBtn.TabIndex = 22;
+            this.SaveBtn.Text = "&Save";
+            this.SaveBtn.UseVisualStyleBackColor = true;
+            this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
+            // 
+            // CheckBtn
+            // 
+            this.CheckBtn.Location = new System.Drawing.Point(609, 434);
+            this.CheckBtn.Name = "CheckBtn";
+            this.CheckBtn.Size = new System.Drawing.Size(110, 45);
+            this.CheckBtn.TabIndex = 23;
+            this.CheckBtn.Text = "&Check";
+            this.CheckBtn.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 501);
+            this.Controls.Add(this.CheckBtn);
+            this.Controls.Add(this.SaveBtn);
             this.Controls.Add(this.OthersLbl);
             this.Controls.Add(this.OthersTxtBx);
             this.Controls.Add(this.NoChckBx);
@@ -309,6 +332,8 @@ namespace Contact_Tracerz
         private System.Windows.Forms.CheckBox NoChckBx;
         private System.Windows.Forms.TextBox OthersTxtBx;
         private System.Windows.Forms.Label OthersLbl;
+        private System.Windows.Forms.Button SaveBtn;
+        private System.Windows.Forms.Button CheckBtn;
     }
 }
 
