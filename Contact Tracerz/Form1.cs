@@ -45,10 +45,10 @@ namespace Contact_Tracerz
 
         private void SaveBtn_Click(object sender, EventArgs e)
         {
-            saveInfo(NameTxtBx.Text, SexTxtBx.Text, byte.Parse(AgeTxtBx.Text), AddTxtBx.Text, byte.Parse(TempTxtBx.Text));
+            saveInfo(NameTxtBx.Text, SexTxtBx.Text, byte.Parse(AgeTxtBx.Text), AddTxtBx.Text, byte.Parse(TempTxtBx.Text), CoughChckBx.Text, FeverChckBx.Text, BodyChckBx.Text, ThroatChckBx.Text, OthersTxtBx.Text, YesChckBx.Text, NoChckBx.Text);
         }
 
-        private void saveInfo(string Name, string Sex, byte Age, string Address, byte Temperature)
+        private void saveInfo(string Name, string Sex, byte Age, string Address, byte Temperature, string Cough, string Fever, string Body_Pain, string Sore_Throat, string Others, string Vaccinated_Yes, string Vaccinated_No)
         {
             StreamWriter output = File.AppendText("Output.txt");
             output.WriteLine(Name);
@@ -56,6 +56,31 @@ namespace Contact_Tracerz
             output.WriteLine(Age.ToString());
             output.WriteLine(Address);
             output.WriteLine(Temperature.ToString());
+            output.WriteLine("");
+            output.WriteLine("Symptoms:");
+            if (CoughChckBx.Checked == true)
+                output.WriteLine(Cough);
+            if (FeverChckBx.Checked == true)
+                output.WriteLine(Fever);
+            if (BodyChckBx.Checked == true)
+                output.WriteLine(Body_Pain);
+            if (ThroatChckBx.Checked == true)
+                output.WriteLine(Sore_Throat);
+            else
+                output.WriteLine(Others);
+            output.WriteLine("");
+            output.WriteLine("Are you vaccinated?");
+            if (YesChckBx.Checked == true)
+                output.WriteLine("Yes");
+            if (NoChckBx.Checked == true)
+                output.WriteLine("No");
+            
+            
+
+
+
+
+
             output.WriteLine("==========");
             output.Close();
 
