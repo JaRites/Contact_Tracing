@@ -53,7 +53,9 @@ namespace Contact_Tracerz
             this.OthersLbl = new System.Windows.Forms.Label();
             this.SaveBtn = new System.Windows.Forms.Button();
             this.CheckBtn = new System.Windows.Forms.Button();
-            this.NewBtn = new System.Windows.Forms.Button();
+            this.ContactLbl = new System.Windows.Forms.Label();
+            this.ContactTxtBx = new System.Windows.Forms.TextBox();
+            this.ExitBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // NameLbl
@@ -270,22 +272,42 @@ namespace Contact_Tracerz
             this.CheckBtn.TabIndex = 23;
             this.CheckBtn.Text = "&Check";
             this.CheckBtn.UseVisualStyleBackColor = true;
+            this.CheckBtn.Click += new System.EventHandler(this.CheckBtn_Click);
             // 
-            // NewBtn
+            // ContactLbl
             // 
-            this.NewBtn.Location = new System.Drawing.Point(653, 434);
-            this.NewBtn.Name = "NewBtn";
-            this.NewBtn.Size = new System.Drawing.Size(110, 45);
-            this.NewBtn.TabIndex = 24;
-            this.NewBtn.Text = "&New";
-            this.NewBtn.UseVisualStyleBackColor = true;
+            this.ContactLbl.AutoSize = true;
+            this.ContactLbl.Location = new System.Drawing.Point(336, 196);
+            this.ContactLbl.Name = "ContactLbl";
+            this.ContactLbl.Size = new System.Drawing.Size(129, 20);
+            this.ContactLbl.TabIndex = 25;
+            this.ContactLbl.Text = "Contact Number:";
+            // 
+            // ContactTxtBx
+            // 
+            this.ContactTxtBx.Location = new System.Drawing.Point(471, 193);
+            this.ContactTxtBx.Name = "ContactTxtBx";
+            this.ContactTxtBx.Size = new System.Drawing.Size(207, 26);
+            this.ContactTxtBx.TabIndex = 26;
+            // 
+            // ExitBtn
+            // 
+            this.ExitBtn.Location = new System.Drawing.Point(653, 434);
+            this.ExitBtn.Name = "ExitBtn";
+            this.ExitBtn.Size = new System.Drawing.Size(110, 45);
+            this.ExitBtn.TabIndex = 27;
+            this.ExitBtn.Text = "&Exit";
+            this.ExitBtn.UseVisualStyleBackColor = true;
+            this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 501);
-            this.Controls.Add(this.NewBtn);
+            this.Controls.Add(this.ExitBtn);
+            this.Controls.Add(this.ContactTxtBx);
+            this.Controls.Add(this.ContactLbl);
             this.Controls.Add(this.CheckBtn);
             this.Controls.Add(this.SaveBtn);
             this.Controls.Add(this.OthersLbl);
@@ -345,7 +367,9 @@ namespace Contact_Tracerz
         private System.Windows.Forms.Label OthersLbl;
         private System.Windows.Forms.Button SaveBtn;
         private System.Windows.Forms.Button CheckBtn;
-        private System.Windows.Forms.Button NewBtn;
+        private System.Windows.Forms.Label ContactLbl;
+        private System.Windows.Forms.TextBox ContactTxtBx;
+        private System.Windows.Forms.Button ExitBtn;
     }
 }
 
