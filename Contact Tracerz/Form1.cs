@@ -18,39 +18,13 @@ namespace Contact_Tracerz
             InitializeComponent();
         }
 
-        private void txtBxMain_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void NameFormatLbl_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-          
-        }
-
         private void SaveBtn_Click(object sender, EventArgs e)
         {
-            saveInfo(NameTxtBx.Text, SexTxtBx.Text, byte.Parse(AgeTxtBx.Text), AddTxtBx.Text, byte.Parse(TempTxtBx.Text), long.Parse(ContactTxtBx.Text), CoughChckBx.Text, FeverChckBx.Text, BodyChckBx.Text, ThroatChckBx.Text, OthersTxtBx.Text, YesChckBx.Text, NoChckBx.Text);        
-
+            saveInfo(NameTxtBx.Text, SexTxtBx.Text, byte.Parse(AgeTxtBx.Text), AddTxtBx.Text, float.Parse(TempTxtBx.Text), long.Parse(ContactTxtBx.Text), CoughChckBx.Text, FeverChckBx.Text, BodyChckBx.Text, ThroatChckBx.Text, OthersTxtBx.Text, YesRadBtn.Text, NoRadBtn.Text);
         }
 
-        private void saveInfo(string Name, string Sex, byte Age, string Address, byte Temperature, long Contact_Number, string Cough, string Fever, string Body_Pain, string Sore_Throat, string Others, string Vaccinated_Yes, string Vaccinated_No)
-        {          
+        private void saveInfo(string Name, string Sex, byte Age, string Address, float Temperature, long Contact_Number, string Cough, string Fever, string Body_Pain, string Sore_Throat, string Others, string Vaccinated_Yes, string Vaccinated_No)
+        {
 
             StreamWriter output = File.AppendText("Output.Txt");
             output.WriteLine("Information:");
@@ -74,14 +48,14 @@ namespace Contact_Tracerz
                 output.WriteLine(Others);
             output.WriteLine("");
             output.WriteLine("Are you vaccinated?");
-            if (YesChckBx.Checked == true)
+            if (YesRadBtn.Checked == true)
+                {
                 output.WriteLine("Yes");
-            if (NoChckBx.Checked == true)
+                }
+            if (NoRadBtn.Checked == true)
                 output.WriteLine("No");
-
             output.WriteLine("=============================");
             output.Close();
-
         }
 
         private void CheckBtn_Click(object sender, EventArgs e)
@@ -94,7 +68,6 @@ namespace Contact_Tracerz
                 MessageBox.Show(inputFile.ReadLine());
             }
       
-
         }
 
         private void ExitBtn_Click(object sender, EventArgs e)

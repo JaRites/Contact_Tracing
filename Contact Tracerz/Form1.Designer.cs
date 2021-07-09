@@ -47,8 +47,6 @@ namespace Contact_Tracerz
             this.ThroatChckBx = new System.Windows.Forms.CheckBox();
             this.questionLbl = new System.Windows.Forms.Label();
             this.VaccineLbl = new System.Windows.Forms.Label();
-            this.YesChckBx = new System.Windows.Forms.CheckBox();
-            this.NoChckBx = new System.Windows.Forms.CheckBox();
             this.OthersTxtBx = new System.Windows.Forms.TextBox();
             this.OthersLbl = new System.Windows.Forms.Label();
             this.SaveBtn = new System.Windows.Forms.Button();
@@ -56,6 +54,8 @@ namespace Contact_Tracerz
             this.ContactLbl = new System.Windows.Forms.Label();
             this.ContactTxtBx = new System.Windows.Forms.TextBox();
             this.ExitBtn = new System.Windows.Forms.Button();
+            this.NoRadBtn = new System.Windows.Forms.RadioButton();
+            this.YesRadBtn = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // NameLbl
@@ -82,7 +82,6 @@ namespace Contact_Tracerz
             this.SexLbl.Size = new System.Drawing.Size(40, 20);
             this.SexLbl.TabIndex = 2;
             this.SexLbl.Text = "Sex:";
-            this.SexLbl.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // SexTxtBx
             // 
@@ -116,7 +115,6 @@ namespace Contact_Tracerz
             this.NameFormatLbl.Size = new System.Drawing.Size(227, 20);
             this.NameFormatLbl.TabIndex = 6;
             this.NameFormatLbl.Text = "Surname, Firstname M.I. Suffix";
-            this.NameFormatLbl.Click += new System.EventHandler(this.NameFormatLbl_Click);
             // 
             // AddLbl
             // 
@@ -218,26 +216,6 @@ namespace Contact_Tracerz
             this.VaccineLbl.TabIndex = 17;
             this.VaccineLbl.Text = "Are you already Vaccinated?";
             // 
-            // YesChckBx
-            // 
-            this.YesChckBx.AutoSize = true;
-            this.YesChckBx.Location = new System.Drawing.Point(42, 434);
-            this.YesChckBx.Name = "YesChckBx";
-            this.YesChckBx.Size = new System.Drawing.Size(63, 24);
-            this.YesChckBx.TabIndex = 18;
-            this.YesChckBx.Text = "Yes";
-            this.YesChckBx.UseVisualStyleBackColor = true;
-            // 
-            // NoChckBx
-            // 
-            this.NoChckBx.AutoSize = true;
-            this.NoChckBx.Location = new System.Drawing.Point(161, 434);
-            this.NoChckBx.Name = "NoChckBx";
-            this.NoChckBx.Size = new System.Drawing.Size(55, 24);
-            this.NoChckBx.TabIndex = 19;
-            this.NoChckBx.Text = "No";
-            this.NoChckBx.UseVisualStyleBackColor = true;
-            // 
             // OthersTxtBx
             // 
             this.OthersTxtBx.Location = new System.Drawing.Point(340, 309);
@@ -256,7 +234,7 @@ namespace Contact_Tracerz
             // 
             // SaveBtn
             // 
-            this.SaveBtn.Location = new System.Drawing.Point(373, 434);
+            this.SaveBtn.Location = new System.Drawing.Point(373, 494);
             this.SaveBtn.Name = "SaveBtn";
             this.SaveBtn.Size = new System.Drawing.Size(110, 45);
             this.SaveBtn.TabIndex = 22;
@@ -266,7 +244,7 @@ namespace Contact_Tracerz
             // 
             // CheckBtn
             // 
-            this.CheckBtn.Location = new System.Drawing.Point(513, 434);
+            this.CheckBtn.Location = new System.Drawing.Point(513, 494);
             this.CheckBtn.Name = "CheckBtn";
             this.CheckBtn.Size = new System.Drawing.Size(110, 45);
             this.CheckBtn.TabIndex = 23;
@@ -292,7 +270,7 @@ namespace Contact_Tracerz
             // 
             // ExitBtn
             // 
-            this.ExitBtn.Location = new System.Drawing.Point(653, 434);
+            this.ExitBtn.Location = new System.Drawing.Point(653, 494);
             this.ExitBtn.Name = "ExitBtn";
             this.ExitBtn.Size = new System.Drawing.Size(110, 45);
             this.ExitBtn.TabIndex = 27;
@@ -300,11 +278,35 @@ namespace Contact_Tracerz
             this.ExitBtn.UseVisualStyleBackColor = true;
             this.ExitBtn.Click += new System.EventHandler(this.ExitBtn_Click);
             // 
+            // NoRadBtn
+            // 
+            this.NoRadBtn.AutoSize = true;
+            this.NoRadBtn.Location = new System.Drawing.Point(148, 444);
+            this.NoRadBtn.Name = "NoRadBtn";
+            this.NoRadBtn.Size = new System.Drawing.Size(54, 24);
+            this.NoRadBtn.TabIndex = 28;
+            this.NoRadBtn.TabStop = true;
+            this.NoRadBtn.Text = "No";
+            this.NoRadBtn.UseVisualStyleBackColor = true;
+            // 
+            // YesRadBtn
+            // 
+            this.YesRadBtn.AutoSize = true;
+            this.YesRadBtn.Location = new System.Drawing.Point(42, 444);
+            this.YesRadBtn.Name = "YesRadBtn";
+            this.YesRadBtn.Size = new System.Drawing.Size(62, 24);
+            this.YesRadBtn.TabIndex = 29;
+            this.YesRadBtn.TabStop = true;
+            this.YesRadBtn.Text = "Yes";
+            this.YesRadBtn.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 501);
+            this.ClientSize = new System.Drawing.Size(800, 551);
+            this.Controls.Add(this.YesRadBtn);
+            this.Controls.Add(this.NoRadBtn);
             this.Controls.Add(this.ExitBtn);
             this.Controls.Add(this.ContactTxtBx);
             this.Controls.Add(this.ContactLbl);
@@ -312,8 +314,6 @@ namespace Contact_Tracerz
             this.Controls.Add(this.SaveBtn);
             this.Controls.Add(this.OthersLbl);
             this.Controls.Add(this.OthersTxtBx);
-            this.Controls.Add(this.NoChckBx);
-            this.Controls.Add(this.YesChckBx);
             this.Controls.Add(this.VaccineLbl);
             this.Controls.Add(this.questionLbl);
             this.Controls.Add(this.ThroatChckBx);
@@ -335,7 +335,6 @@ namespace Contact_Tracerz
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Name = "Form1";
             this.Text = "Covid-19 Contact Tracing";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -361,8 +360,6 @@ namespace Contact_Tracerz
         private System.Windows.Forms.CheckBox ThroatChckBx;
         private System.Windows.Forms.Label questionLbl;
         private System.Windows.Forms.Label VaccineLbl;
-        private System.Windows.Forms.CheckBox YesChckBx;
-        private System.Windows.Forms.CheckBox NoChckBx;
         private System.Windows.Forms.TextBox OthersTxtBx;
         private System.Windows.Forms.Label OthersLbl;
         private System.Windows.Forms.Button SaveBtn;
@@ -370,6 +367,8 @@ namespace Contact_Tracerz
         private System.Windows.Forms.Label ContactLbl;
         private System.Windows.Forms.TextBox ContactTxtBx;
         private System.Windows.Forms.Button ExitBtn;
+        private System.Windows.Forms.RadioButton NoRadBtn;
+        private System.Windows.Forms.RadioButton YesRadBtn;
     }
 }
 
